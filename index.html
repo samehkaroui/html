@@ -1,99 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Navbar -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Home Section -->
     <section id="home">
-        <h1>Bienvenue à mon Portfolio</h1>
-        <p>Un aperçu de mes projets et compétences.</p>
+      <h1>Bienvenue à mon Portfolio</h1>
+      <p>Un aperçu de mes projets et compétences.</p>
+      <img
+        src="https://www.ilboursa.com/handlers/image_news_get.ashx?id=8F671604-ED9C-41C4-9290-F79934070FF3"
+      />
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <h2>À Propos de Moi</h2>
-        <p>Une brève description de qui vous êtes, de vos passions et de vos compétences.</p>
-        <audio controls>
-            <source src="audio/presentation.mp3" type="audio/mpeg">
-            Votre navigateur ne supporte pas la balise audio.
-        </audio>
+      <h2>À Propos de Moi</h2>
+      <p>
+        Une brève description de qui vous êtes, de vos passions et de vos
+        compétences.
+      </p>
+      <audio controls>
+        <source src="audio/presentation.mp3" type="audio/mpeg" />
+        Votre navigateur ne supporte pas la balise audio.
+      </audio>
     </section>
 
     <!-- Work Section -->
     <section id="work">
-        <h2>Mon Travail</h2>
-        <p>Voici quelques exemples de mes projets récents :</p>
-        <ul>
-            <li>Projet 1 - <a href="projets/projet1.html">Voir plus</a></li>
-            <li>Projet 2 - <a href="projets/projet2.html">Voir plus</a></li>
-            <li>Projet 3 - <a href="projets/projet3.html">Voir plus</a></li>
-        </ul>
-        <video controls width="400">
-            <source src="videos/projet-video.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la balise vidéo.
-        </video>
+      <h2>Mon Travail</h2>
+      <p>Voici quelques exemples de mes projets récents :</p>
+      <ul>
+        <li>Projet 1 - <a href="projets/projet1.html">Voir plus</a></li>
+        <li>Projet 2 - <a href="projets/projet2.html">Voir plus</a></li>
+        <li>Projet 3 - <a href="projets/projet3.html">Voir plus</a></li>
+      </ul>
+      <video controls width="400">
+        <source
+          src="https://youtu.be/Bv239s6VhTs?si=jniGVTpA9H-NiQpU"
+          type="video/mp4"
+        />
+        Votre navigateur ne supporte pas la balise vidéo.
+      </video>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Bv239s6VhTs?si=jniGVTpA9H-NiQpU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
     </section>
 
     <!-- Resume Section -->
     <section id="resume">
-        <h2>Mon CV</h2>
-        <table>
-            <tr>
-                <th>Année</th>
-                <th>Poste</th>
-                <th>Entreprise</th>
-            </tr>
-            <tr>
-                <td>2024-2025</td>
-                <td>Développeur Web</td>
-                <td>Entreprise gomycode</td>
-            </tr>
-            <tr>
-                <td>2024-2025</td>
-                <td>Designer Graphique</td>
-                <td>Agence gomycode</td>
-            </tr>
-        </table>
+      <h2>Mon CV</h2>
+      <table>
+        <tr>
+          <th>Année</th>
+          <th>Poste</th>
+          <th>Entreprise</th>
+        </tr>
+        <tr>
+          <td>2024-2025</td>
+          <td>Développeur Web</td>
+          <td>Entreprise gomycode</td>
+        </tr>
+        <tr>
+          <td>2024-2025</td>
+          <td>Designer Graphique</td>
+          <td>Agence gomycode</td>
+        </tr>
+      </table>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contactez-moi</h2>
-        <form action="traitement-formulaire.php" method="post">
-            <label for="nom">Nom:</label>
-            <input type="text" id="nom" name="nom" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <input type="submit" value="Envoyer">
-        </form>
+      <h2>Contactez-moi</h2>
+      <form action="traitement-formulaire.php" method="post">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Envoyer" />
+      </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Mon Nom. Tous droits réservés.</p>
+      <p>&copy; 2024 Mon Nom. Tous droits réservés.</p>
     </footer>
-
-</body>
+  </body>
 </html>
