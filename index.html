@@ -3,24 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Navbar -->
     <header>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="fe"><a href="#home">Home</a></li>
+          <li class="fe"><a href="#about">About</a></li>
+          <li class="fe"><a href="#work">Work</a></li>
+          <li class="fe"><a href="#resume">Resume</a></li>
+          <li class="fe"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Home Section -->
-    <section id="home">
+    <section class="portfolio">
       <h1>Bienvenue à mon Portfolio</h1>
       <p>Un aperçu de mes projets et compétences.</p>
       <img
@@ -29,7 +30,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section class="portfolio">
       <h2>À Propos de Moi</h2>
       <p>
         Une brève description de qui vous êtes, de vos passions et de vos
@@ -42,24 +43,19 @@
     </section>
 
     <!-- Work Section -->
-    <section id="work">
+    <section class="portfolio">
       <h2>Mon Travail</h2>
       <p>Voici quelques exemples de mes projets récents :</p>
       <ul>
-        <li>Projet 1 - <a href="projets/projet1.html">Voir plus</a></li>
-        <li>Projet 2 - <a href="projets/projet2.html">Voir plus</a></li>
-        <li>Projet 3 - <a href="projets/projet3.html">Voir plus</a></li>
+        <li class="portfolio-item">Projet 1 - <a href="projets/projet1.html">Voir plus</a></li>
+        <li class="portfolio-item">Projet 2 - <a href="projets/projet2.html">Voir plus</a></li>
+        <li class="portfolio-item">Projet 3 - <a href="projets/projet3.html">Voir plus</a></li>
       </ul>
-      <video controls width="400">
-        <source
-          src="https://youtu.be/Bv239s6VhTs?si=jniGVTpA9H-NiQpU"
-          type="video/mp4"
-        />
-        Votre navigateur ne supporte pas la balise vidéo.
+
       </video>
-      <iframe
-        width="560"
-        height="315"
+      <iframe class="yt1"
+        width="400"
+        height="300"
         src="https://www.youtube.com/embed/Bv239s6VhTs?si=jniGVTpA9H-NiQpU"
         title="YouTube video player"
         frameborder="0"
@@ -70,13 +66,13 @@
     </section>
 
     <!-- Resume Section -->
-    <section id="resume">
+    <section class="portfolio">
       <h2>Mon CV</h2>
       <table>
         <tr>
-          <th>Année</th>
-          <th>Poste</th>
-          <th>Entreprise</th>
+          <th class="portfolio-item">Année</th>
+          <th class="portfolio-item">Poste</th>
+          <th class="portfolio-item">Entreprise</th>
         </tr>
         <tr>
           <td>2024-2025</td>
@@ -92,19 +88,19 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section class="portfolio">
       <h2>Contactez-moi</h2>
       <form action="traitement-formulaire.php" method="post">
         <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom" required />
+        <input class="nm" type="text" id="nom" name="nom" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <input class="nm" type="email" id="email" name="email" required />
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea class="n" id="message" name="message" required></textarea>
 
-        <input type="submit" value="Envoyer" />
+        <input class="portfolio-item" type="submit" value="Envoyer" />
       </form>
     </section>
 
